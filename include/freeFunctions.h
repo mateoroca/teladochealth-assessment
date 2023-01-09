@@ -1,5 +1,6 @@
 #ifndef FREEFUNCIONS_H
 #define FREEFUNCIONS_H
+
 #include <iostream>
 #include <iomanip>
 

@@ -1,4 +1,4 @@
-#include "../include/freeFuncions.h"
+#include "../include/freeFunctions.h"
 
 
 void initMatrix(int**& array, std::size_t x)

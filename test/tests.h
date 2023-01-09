@@ -1,15 +1,17 @@
 #ifndef TESTS_H
 #define TESTS_H
+
 #include <assert.h>
-#include "../include/freeFuncions.h"
+#include "../include/freeFunctions.h"
+
 
 void testOneEqualMatrix()
 {   
-    int sizeNxN;
+    const int sizeNxN = 5;
 
     int** matrix = createSnailShell(5);
 
-    const int testMatrix[sizeNxN][sizeNxN] = {
+    const int testMatrix[][sizeNxN] = {
          1,  2,  3,  4, 5,
         16, 17, 18, 19, 6,
         15, 24, 25, 20, 7,
@@ -25,10 +27,10 @@ void testOneEqualMatrix()
             std::cout << "Test one passed" << std::endl;
                 
              else assert(testMatrix[i][j] == matrix[i][j]);
-                 freeMatrix(matrix, sizeNxN);
             
         }
     }
+    freeMatrix(matrix, sizeNxN);
 
 } 
 

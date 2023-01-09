@@ -1,5 +1,7 @@
 #include <iostream>
-#include "./include/freeFuncions.h"
+
+#include "./include/freeFunctions.h"
+
 #include "./test/tests.h"
 
 int main()
